@@ -9,5 +9,6 @@ class Tweet():
         self.created_at = datetime.now()
         self.likes = 0
 
+    @property
     def published_at(self):
         return self.created_at.strftime("%d %B, %Y")
