@@ -6,7 +6,7 @@ class Twitter():
 
     def timeline(self):
         for t in self.tweets:
-            print(t.published_at)
+            print(t.web_version())
 
 
 twitter = Twitter()

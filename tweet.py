@@ -15,3 +15,9 @@ class Tweet():
 
     def add_like(self):
         self.likes = self.likes + 1
+
+    def web_version(self):
+        return f'''
+        {self.author} - {self.published_at}\n
+        {self.text}
+        '''
