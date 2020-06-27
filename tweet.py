@@ -12,3 +12,6 @@ class Tweet():
     @property
     def published_at(self):
         return self.created_at.strftime("%d %B, %Y")
+
+    def add_like(self):
+        self.likes = self.likes + 1
